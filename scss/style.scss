@@ -1,5 +1,44 @@
 @import "null-style.scss";
+$bgColor: #f0a800;
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f0a800;
+    background-color: $bgColor;
+    display: flex;
+    align-items: center;
+    i {
+        font-size: 30px;
+        color: #d89030;
+        position: absolute;
+    }
 }
+
+.container {
+    width: 80%;
+    height: 75%;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: $bgColor;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+/* &:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {} */

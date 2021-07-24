@@ -91,4 +91,46 @@ h6 {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f0a800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+body i {
+  font-size: 30px;
+  color: #d89030;
+  position: absolute;
+}
+
+.container {
+  width: 80%;
+  height: 75%;
+  border-radius: 15px;
+  margin: 0 auto;
+  background-color: #f0a800;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+}
+
+/* &:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {}
+&:nth-child() {} */
