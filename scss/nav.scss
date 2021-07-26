@@ -1,0 +1,73 @@
+.navigation {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 30%;
+    height: 100%;
+    padding: 1.5% 5px;
+    border-left: 1px solid #cf971e;
+    border-radius: 0px 15px 15px 0px;
+    z-index: 3;
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+    .my-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .wrapper-img {
+            background-color: #c06048;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        .my-names {
+            color: #c06048;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            font-size: 19px;
+            margin: 10px 0px 5px;
+        }
+        .profession {
+            color: #a76f23;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+            li {
+                margin: 0 5%;
+                i {
+                    padding: 5px;
+                    background-color: #783078;
+                    position: static;
+                    font-size: 15px;
+                    color: white;
+                    border-radius: 4px;
+                    transition: 0.5s;
+                    &:hover {
+                        background-color: #5b235b;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    ul {
+        margin-top: 15%;
+        li {
+            text-align: center;
+            cursor: pointer;
+            color: #ae7420;
+            font-size: 17px;
+            font-weight: 400;
+            transition: 0.4s;
+            padding: 6% 0;
+            border-radius: 15px;
+            &:hover {
+                background-color: #ffffff26;
+            }
+        }
+    }
+}
