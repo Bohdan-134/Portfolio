@@ -169,10 +169,10 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.contact-me .contact-me__containerTop .contact-me_block i {
-  position: static;
-  color: #783078;
-  font-size: 40px;
+.contact-me .contact-me__containerTop .contact-me_block model-viewer {
+  width: 100px;
+  height: 100px;
+  outline: none;
 }
 .contact-me .contact-me__containerTop .contact-me_block span {
   color: #783078;

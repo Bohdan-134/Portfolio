@@ -57,10 +57,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            i {
-                position: static;
-                color: #783078;
-                font-size: 40px;
+            model-viewer {
+                width: 100px;
+                height: 100px;
+                outline: none;
             }
             span {
                 color: #783078;
