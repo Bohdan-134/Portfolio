@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -98,6 +99,7 @@ h6 {
   height: 100%;
   position: relative;
   z-index: 2;
+  overflow-y: scroll;
 }
 
 .about-me {
@@ -128,9 +130,64 @@ h6 {
 }
 
 .my-work {
-  display: none;
+  position: relative;
 }
-
+.my-work .wrapper-slider {
+  width: 85%;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 1px solid black;
+}
+.my-work .wrapper-slider .slider {
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.my-work .wrapper-slider .slider .weather {
+  background-color: black;
+}
+.my-work .wrapper-slider .slider .room {
+  background-color: pink;
+}
+.my-work .wrapper-slider .slider .it-studio {
+  background-color: white;
+}
+.my-work .wrapper-slider .slider .slider-item {
+  height: 130px;
+  margin: 0px 10px;
+}
+.my-work .wrapper-slider .slider .slick-list {
+  overflow: hidden;
+  padding: 0px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.my-work .wrapper-slider .slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+}
 .my-skills {
   display: none;
 }
@@ -146,6 +203,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 .contact-me .contact-me__containerTop {
   display: -webkit-box;
@@ -193,14 +251,29 @@ h6 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 15% 0;
+  margin: 10% 0;
 }
 .contact-me .contact-me__form form .inputs input {
   width: 30%;
   background-color: transparent;
-  border-bottom: 1px solid #b17620;
+  border-bottom: 1px solid #c06048;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
+  color: #b17620;
+}
+.contact-me .contact-me__form form .inputs input::-webkit-input-placeholder {
+  color: #b17620;
+}
+.contact-me .contact-me__form form .inputs input::-moz-placeholder {
+  color: #b17620;
+}
+.contact-me .contact-me__form form .inputs input:-ms-input-placeholder {
+  color: #b17620;
+}
+.contact-me .contact-me__form form .inputs input::-ms-input-placeholder {
+  color: #b17620;
+}
+.contact-me .contact-me__form form .inputs input::placeholder {
   color: #b17620;
 }
 .contact-me .contact-me__form form textarea {
@@ -208,9 +281,21 @@ h6 {
   background-color: transparent;
   border: 1px solid #b17620;
   border-radius: 15px;
+  max-width: 100%;
+  border: 1px solid #c06048;
+  font-size: 15px;
+  max-height: 180px;
+  padding: 2% 3%;
 }
 .contact-me .contact-me__form form input[type=submit] {
   padding: 2% 3%;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #783078;
+  color: white;
+  font-weight: 300;
+  margin-top: 3%;
+  cursor: pointer;
 }
 
 .navigation {

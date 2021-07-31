@@ -7,6 +7,7 @@
         height: 100%;
         position: relative;
         z-index: 2;
+        overflow-y: scroll;
     }
 }
 
@@ -38,7 +39,72 @@
 }
 
 .my-work {
-    display: none;
+    position: relative;
+    .wrapper-slider {
+        width: 85%;
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid black;
+        .slider {
+            .weather {
+                background-color: black;
+            }
+            .room {
+                background-color: pink;
+            }
+            .it-studio {
+                background-color: white;
+            }
+            .slider-item {
+                height: 130px;
+                margin: 0px 10px;
+            }
+            .slick-slider {}
+            /* Слайдер запущен */
+            .slick-slider.slick-initialized {}
+            /* Слайдер с точками */
+            .slick-slider.slick-dotted {}
+            /* Ограничивающая оболочка */
+            .slick-list {
+                overflow: hidden;
+                padding: 0px !important;
+                display: flex;
+                justify-content: center;
+            }
+            /* Лента слайдов */
+            .slick-track {
+                display: flex;
+                min-width: 100%;
+            }
+            /* Слайд */
+            .slick-slide {}
+            /* Слайд активный (показывается) */
+            .slick-slide.slick-active {}
+            /* Слайд основной */
+            .slick-slide.slick-current {}
+            /* Слайд по центру */
+            .slick-slide.slick-center {}
+            /* Клонированный слайд */
+            .slick-slide.slick-cloned {}
+            /* Стрелка */
+            .slick-arrow {}
+            /* Стрелка влево */
+            .slick-arrow.slick-prev {}
+            /* Стрелка вправо */
+            .slick-arrow.slick-next {}
+            /* Стрелка не активная */
+            .slick-arrow.slick-disabled {}
+            /* Точки (булиты) */
+            .slick-dots {}
+            .slick-dots li {}
+            /* Активная точка */
+            .slick-dots li.slick-active {}
+            /* Элемент точки */
+            .slick-dots li button {}
+        }
+    }
 }
 
 .my-skills {
@@ -49,6 +115,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: none;
     .contact-me__containerTop {
         display: flex;
         justify-content: space-around;
@@ -80,14 +147,17 @@
             .inputs {
                 display: flex;
                 justify-content: space-around;
-                margin: 15% 0;
+                margin: 10% 0;
                 input {
                     width: 30%;
                     background-color: transparent;
-                    border-bottom: 1px solid #b17620;
+                    border-bottom: 1px solid #c06048;
                     text-align: center;
-                    font-size: 15px;
+                    font-size: 17px;
                     color: #b17620;
+                    &::placeholder {
+                        color: #b17620;
+                    }
                 }
             }
             textarea {
@@ -95,9 +165,21 @@
                 background-color: transparent;
                 border: 1px solid #b17620;
                 border-radius: 15px;
+                max-width: 100%;
+                border: 1px solid #c06048;
+                font-size: 15px;
+                max-height: 180px;
+                padding: 2% 3%;
             }
             input[type="submit"] {
                 padding: 2% 3%;
+                width: 100%;
+                border-radius: 15px;
+                background-color: #783078;
+                color: white;
+                font-weight: 300;
+                margin-top: 3%;
+                cursor: pointer;
             }
         }
     }
