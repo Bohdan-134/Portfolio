@@ -104,46 +104,140 @@ h6 {
 
 .about-me {
   padding: 10% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.about-me h2 {
+.about-me ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 50px;
   font-weight: 600;
   color: #c06048;
 }
-.about-me p {
+.about-me .about-me__text {
   color: #ae7420;
   font-size: 20px;
   margin: 6% 0;
   letter-spacing: 1px;
   line-height: 1.3em;
 }
-.about-me .about-me__img-wrapper {
-  /*  margin-top: 6%; */
-  margin-bottom: 6%;
+.about-me .certificate-active {
+  top: 0% !important;
 }
-.about-me .about-me__img-wrapper img {
-  width: 10%;
+.about-me .certificate-active .button-certificate i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.about-me .about-me__certificate {
+  position: absolute;
+  background-color: #783078;
+  right: 10px;
+  top: -16%;
+  width: 25%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0px 0px 15px 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.about-me .about-me__certificate .certificate__wrapper-img {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-me .about-me__certificate .certificate__wrapper-img img {
+  width: 30%;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 10px;
 }
-.about-me .about-me__img-wrapper img:hover {
+.about-me .about-me__certificate .certificate__wrapper-img img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+.about-me .about-me__certificate .button-certificate {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 0px 0px 15px 15px;
+}
+.about-me .about-me__certificate .button-certificate span {
+  color: #c06048;
+  font-weight: 900;
+  margin-right: 2%;
+}
+.about-me .about-me__certificate .button-certificate i {
+  position: static;
+  color: #c06048;
+  font-size: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 .about-me button {
   background-color: transparent;
-  border: 1px solid #783078;
-  background-color: #783078;
+  border: 2px solid #783078;
+  background-color: transparent;
   border-radius: 15px;
   padding: 2% 4%;
-  color: #fffbfb;
-  font-weight: 200;
+  color: #c06048;
+  font-weight: 900;
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+.about-me button:hover {
+  color: #783078;
+}
+.about-me button::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #783078;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.about-me button:hover::before {
+  content: "";
+  top: -100%;
 }
 
 .contact-me {
@@ -253,6 +347,37 @@ h6 {
 
 .block-active {
   visibility: visible !important;
+}
+
+.active-h2 {
+  position: relative;
+  bottom: 4px;
+}
+
+.t1 {
+  position: relative;
+  cursor: crosshair;
+}
+.t1::before {
+  content: "";
+  width: 0%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  background-color: #783078;
+  z-index: -1;
+}
+
+.active-t1 {
+  color: #c06048;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+.active-t1::before {
+  content: "";
+  width: 100%;
 }
 
 .navigation {
