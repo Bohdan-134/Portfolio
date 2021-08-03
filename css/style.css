@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -93,18 +92,22 @@ h6 {
   width: 70%;
   height: 100%;
   position: relative;
+  overflow-y: scroll;
 }
 .content .block {
   width: 100%;
   height: 100%;
-  position: relative;
   z-index: 2;
-  overflow-y: scroll;
+  visibility: hidden;
+  position: absolute;
 }
 
 .about-me {
-  padding: 15% 5%;
-  display: none;
+  padding: 10% 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .about-me h2 {
   font-size: 50px;
@@ -112,12 +115,26 @@ h6 {
   color: #c06048;
 }
 .about-me p {
-  max-width: 75%;
   color: #ae7420;
   font-size: 20px;
   margin: 6% 0;
   letter-spacing: 1px;
   line-height: 1.3em;
+}
+.about-me .about-me__img-wrapper {
+  /*  margin-top: 6%; */
+  margin-bottom: 6%;
+}
+.about-me .about-me__img-wrapper img {
+  width: 10%;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.about-me .about-me__img-wrapper img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .about-me button {
   background-color: transparent;
@@ -127,69 +144,6 @@ h6 {
   padding: 2% 4%;
   color: #fffbfb;
   font-weight: 200;
-}
-
-.my-work {
-  position: relative;
-}
-.my-work .wrapper-slider {
-  width: 85%;
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border: 1px solid black;
-}
-.my-work .wrapper-slider .slider {
-  /* Слайдер запущен */
-  /* Слайдер с точками */
-  /* Ограничивающая оболочка */
-  /* Лента слайдов */
-  /* Слайд */
-  /* Слайд активный (показывается) */
-  /* Слайд основной */
-  /* Слайд по центру */
-  /* Клонированный слайд */
-  /* Стрелка */
-  /* Стрелка влево */
-  /* Стрелка вправо */
-  /* Стрелка не активная */
-  /* Точки (булиты) */
-  /* Активная точка */
-  /* Элемент точки */
-}
-.my-work .wrapper-slider .slider .weather {
-  background-color: black;
-}
-.my-work .wrapper-slider .slider .room {
-  background-color: pink;
-}
-.my-work .wrapper-slider .slider .it-studio {
-  background-color: white;
-}
-.my-work .wrapper-slider .slider .slider-item {
-  height: 130px;
-  margin: 0px 10px;
-}
-.my-work .wrapper-slider .slider .slick-list {
-  overflow: hidden;
-  padding: 0px !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.my-work .wrapper-slider .slider .slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-width: 100%;
-}
-.my-skills {
-  display: none;
 }
 
 .contact-me {
@@ -203,7 +157,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: none;
 }
 .contact-me .contact-me__containerTop {
   display: -webkit-box;
@@ -298,13 +251,17 @@ h6 {
   cursor: pointer;
 }
 
+.block-active {
+  visibility: visible !important;
+}
+
 .navigation {
   position: absolute;
   right: 0%;
   top: 0%;
   width: 30%;
   height: 100%;
-  padding: 1.5% 5px;
+  padding: 1.5% 0;
   border-left: 1px solid #cf971e;
   border-radius: 0px 15px 15px 0px;
   background-color: #d890305c;
@@ -372,6 +329,7 @@ h6 {
 }
 .navigation ul {
   margin-top: 15%;
+  position: relative;
 }
 .navigation ul li {
   text-align: center;
@@ -382,10 +340,56 @@ h6 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   padding: 6% 0;
-  border-radius: 15px;
 }
 .navigation ul li:hover {
   background-color: #ffffff26;
+}
+.navigation ul .indicator {
+  position: absolute;
+  width: 3px;
+  height: calc(100%/3);
+  background-color: brown;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.active {
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /*  &::before,
+  &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2px;
+      height: 100%;
+      animation: dotted 1s infinite;
+      background-color: brown;
+      transition: 0.5s;
+  }
+  &::before {
+      left: 0%;
+  }
+  &::after {
+      right: 20%;
+      display: none;
+  } */
+  /* @keyframes dotted {
+      0% {
+          background-color: #c06048;
+            transform: translateY(-50%) scale(1); 
+      }
+      50% {
+          background-color: #783078;
+             transform: translateY(-50%) scale(1.1); 
+      }
+      100% {
+          background-color: #c06048;
+            transform: translateY(-50%) scale(1); 
+      }
+  }  */
 }
 
 body {

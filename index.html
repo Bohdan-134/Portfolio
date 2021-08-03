@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- slick-slider -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- box-icons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- fonts -->
@@ -60,29 +58,21 @@
         <i class='bx bx-tab'></i>
         <i class='bx bx-mobile-alt'></i>
         <div class="content">
-            <div class="about-me block">
+            <div class="about-me block block-active" id="tab-1">
                 <h2>Hello,</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, et ipsam mollitia maiores voluptatum reiciendis aut voluptate dolor impedit minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora expedita delectus explicabo
-                    illo dolorum laboriosam nihil praesentium sit necessitatibus aliquam.</p>
+                <p>My name is Bogdan, I am 20 years old, I live in Kherson, Ukraine. He graduated from courses at Beetroot, where he studied Front-End Development.</p>
+                <div class="about-me__img-wrapper">
+                    <img src="./img/Kochmar.jpg" alt="img">
+                </div><br>
                 <button id="contactMe">Contact me</button>
+
+
             </div>
-            <div class="my-work block">
-                <div class="wrapper-slider">
-                    <div class="slider">
-                        <div class="weather slider-item">
+            <div class="my-work block" id="tab-2">
 
-                        </div>
-                        <div class="room slider-item">
-
-                        </div>
-                        <div class="it-studio slider-item">
-
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="my-skills block"></div>
-            <div class="contact-me block">
+
+            <div class="contact-me block" id="tab-3">
                 <div class="contact-me__containerTop">
                     <div class="contact-me_block">
                         <model-viewer src="./3d/old_phone/scene.gltf" ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
@@ -133,23 +123,23 @@
                 </ul>
             </div>
             <ul>
-                <li class="nav-button">About me</li>
-                <li class="nav-button">My work</li>
-                <li class="nav-button">My skills</li>
-                <li class="nav-button">Contact me</li>
+                <div class="indicator"></div>
+                <li class="nav-button active" data-tab="#tab-1">About me</li>
+                <li class="nav-button" data-tab="#tab-2">My work</li>
+                <li class="nav-button" data-tab="#tab-3">Contact me</li>
+
             </ul>
 
         </nav>
     </div>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- 3d -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <!-- slick-slider -->
     <script src="./js/slick.min.js"></script>
+    <!-- 3d -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <!--  js -->
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>

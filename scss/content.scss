@@ -2,30 +2,43 @@
     width: 70%;
     height: 100%;
     position: relative;
+    overflow-y: scroll;
     .block {
         width: 100%;
         height: 100%;
-        position: relative;
         z-index: 2;
-        overflow-y: scroll;
+        visibility: hidden;
+        position: absolute;
     }
 }
 
 .about-me {
-    padding: 15% 5%;
-    display: none;
+    padding: 10% 5%;
+    flex-direction: column;
     h2 {
         font-size: 50px;
         font-weight: 600;
         color: #c06048;
     }
     p {
-        max-width: 75%;
         color: #ae7420;
         font-size: 20px;
         margin: 6% 0;
         letter-spacing: 1px;
         line-height: 1.3em;
+    }
+    .about-me__img-wrapper {
+        /*  margin-top: 6%; */
+        margin-bottom: 6%;
+        img {
+            width: 10%;
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 10px;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
     button {
         background-color: transparent;
@@ -38,84 +51,12 @@
     }
 }
 
-.my-work {
-    position: relative;
-    .wrapper-slider {
-        width: 85%;
-        position: absolute;
-        bottom: 2%;
-        left: 50%;
-        transform: translateX(-50%);
-        border: 1px solid black;
-        .slider {
-            .weather {
-                background-color: black;
-            }
-            .room {
-                background-color: pink;
-            }
-            .it-studio {
-                background-color: white;
-            }
-            .slider-item {
-                height: 130px;
-                margin: 0px 10px;
-            }
-            .slick-slider {}
-            /* Слайдер запущен */
-            .slick-slider.slick-initialized {}
-            /* Слайдер с точками */
-            .slick-slider.slick-dotted {}
-            /* Ограничивающая оболочка */
-            .slick-list {
-                overflow: hidden;
-                padding: 0px !important;
-                display: flex;
-                justify-content: center;
-            }
-            /* Лента слайдов */
-            .slick-track {
-                display: flex;
-                min-width: 100%;
-            }
-            /* Слайд */
-            .slick-slide {}
-            /* Слайд активный (показывается) */
-            .slick-slide.slick-active {}
-            /* Слайд основной */
-            .slick-slide.slick-current {}
-            /* Слайд по центру */
-            .slick-slide.slick-center {}
-            /* Клонированный слайд */
-            .slick-slide.slick-cloned {}
-            /* Стрелка */
-            .slick-arrow {}
-            /* Стрелка влево */
-            .slick-arrow.slick-prev {}
-            /* Стрелка вправо */
-            .slick-arrow.slick-next {}
-            /* Стрелка не активная */
-            .slick-arrow.slick-disabled {}
-            /* Точки (булиты) */
-            .slick-dots {}
-            .slick-dots li {}
-            /* Активная точка */
-            .slick-dots li.slick-active {}
-            /* Элемент точки */
-            .slick-dots li button {}
-        }
-    }
-}
-
-.my-skills {
-    display: none;
-}
+.my-work {}
 
 .contact-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    display: none;
     .contact-me__containerTop {
         display: flex;
         justify-content: space-around;
@@ -183,4 +124,8 @@
             }
         }
     }
+}
+
+.block-active {
+    visibility: visible !important;
 }
