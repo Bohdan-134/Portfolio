@@ -1,6 +1,7 @@
 const navBtn = document.querySelectorAll('.nav-button');
 const block = document.querySelectorAll('.block');
 
+
 navBtn.forEach(function(item) {
     item.addEventListener('click', () => {
         let currentBtn = item;
@@ -16,6 +17,8 @@ navBtn.forEach(function(item) {
         currentTab.classList.add('block-active');
     })
 });
+
+
 
 const indicator = document.querySelector('.indicator');
 

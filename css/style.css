@@ -241,6 +241,20 @@ h6 {
 }
 
 .contact-me {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+.contact-me .contact-me__info-block {
+  width: 40%;
+  height: 95%;
+  background-color: #783078f2;
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,101 +262,52 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.contact-me .contact-me__containerTop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.contact-me .contact-me__containerTop .contact-me_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
 }
-.contact-me .contact-me__containerTop .contact-me_block model-viewer {
-  width: 100px;
-  height: 100px;
-  outline: none;
+.contact-me .contact-me__info-block ul {
+  width: 90%;
 }
-.contact-me .contact-me__containerTop .contact-me_block span {
-  color: #783078;
-  font-weight: 600;
-  font-size: 20px;
-  margin: 2% 0;
-}
-.contact-me .contact-me__containerTop .contact-me_block p {
-  color: #b17620;
-  font-weight: 200;
-}
-.contact-me .contact-me__form {
-  padding: 0 2%;
-}
-.contact-me .contact-me__form form .inputs {
+.contact-me .contact-me__info-block ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 10% 0;
-}
-.contact-me .contact-me__form form .inputs input {
-  width: 30%;
-  background-color: transparent;
-  border-bottom: 1px solid #c06048;
-  text-align: center;
-  font-size: 17px;
-  color: #b17620;
-}
-.contact-me .contact-me__form form .inputs input::-webkit-input-placeholder {
-  color: #b17620;
-}
-.contact-me .contact-me__form form .inputs input::-moz-placeholder {
-  color: #b17620;
-}
-.contact-me .contact-me__form form .inputs input:-ms-input-placeholder {
-  color: #b17620;
-}
-.contact-me .contact-me__form form .inputs input::-ms-input-placeholder {
-  color: #b17620;
-}
-.contact-me .contact-me__form form .inputs input::placeholder {
-  color: #b17620;
-}
-.contact-me .contact-me__form form textarea {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid #b17620;
-  border-radius: 15px;
-  max-width: 100%;
-  border: 1px solid #c06048;
-  font-size: 15px;
-  max-height: 180px;
-  padding: 2% 3%;
-}
-.contact-me .contact-me__form form input[type=submit] {
-  padding: 2% 3%;
-  width: 100%;
-  border-radius: 15px;
-  background-color: #783078;
-  color: white;
-  font-weight: 300;
-  margin-top: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10% auto;
+  background-color: #c06048;
+  padding: 5px 10px;
+  border-radius: 10px;
   cursor: pointer;
+  width: 50%;
+}
+.contact-me .contact-me__info-block ul li:nth-child(6) {
+  margin: 30% 0 0 0;
+  background-color: transparent;
+  width: 100%;
+}
+.contact-me .contact-me__info-block ul li i {
+  position: static;
+  font-size: 20px;
+  color: #783078f2;
+}
+.contact-me .contact-me__info-block ul li a {
+  color: #783078f2;
+  font-weight: 500;
+  font-size: 14px;
+}
+.contact-me .contact-me__info-block ul iframe {
+  border-radius: 15px;
+  height: 30%;
 }
 
 .block-active {

@@ -121,73 +121,55 @@
 .my-work {}
 
 .contact-me {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    .contact-me__containerTop {
+    justify-content: center; */
+    .contact-me__info-block {
+        width: 40%;
+        height: 95%;
+        background-color: #783078f2;
+        position: absolute;
+        top: 50%;
+        left: 1%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 15px;
         display: flex;
-        justify-content: space-around;
-        .contact-me_block {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            model-viewer {
-                width: 100px;
-                height: 100px;
-                outline: none;
-            }
-            span {
-                color: #783078;
-                font-weight: 600;
-                font-size: 20px;
-                margin: 2% 0;
-            }
-            p {
-                color: #b17620;
-                font-weight: 200;
-            }
-        }
-    }
-    .contact-me__form {
-        padding: 0 2%;
-        form {
-            .inputs {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+        ul {
+            width: 90%;
+            li {
                 display: flex;
-                justify-content: space-around;
-                margin: 10% 0;
-                input {
-                    width: 30%;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10% auto;
+                background-color: #c06048;
+                padding: 5px 10px;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 50%;
+                &:nth-child(6) {
+                    margin: 30% 0 0 0;
                     background-color: transparent;
-                    border-bottom: 1px solid #c06048;
-                    text-align: center;
-                    font-size: 17px;
-                    color: #b17620;
-                    &::placeholder {
-                        color: #b17620;
-                    }
+                    width: 100%;
+                }
+                i {
+                    position: static;
+                    font-size: 20px;
+                    color: #783078f2;
+                }
+                a {
+                    color: #783078f2;
+                    font-weight: 500;
+                    font-size: 14px;
                 }
             }
-            textarea {
-                width: 100%;
-                background-color: transparent;
-                border: 1px solid #b17620;
+            iframe {
                 border-radius: 15px;
-                max-width: 100%;
-                border: 1px solid #c06048;
-                font-size: 15px;
-                max-height: 180px;
-                padding: 2% 3%;
-            }
-            input[type="submit"] {
-                padding: 2% 3%;
-                width: 100%;
-                border-radius: 15px;
-                background-color: #783078;
-                color: white;
-                font-weight: 300;
-                margin-top: 3%;
-                cursor: pointer;
+                height: 30%;
             }
         }
     }
