@@ -1,5 +1,7 @@
 const navBtn = document.querySelectorAll('.nav-button');
 const block = document.querySelectorAll('.block');
+const blurBg = document.querySelector('.blur');
+const container = document.querySelector('.container');
 
 
 navBtn.forEach(function(item) {
@@ -31,6 +33,10 @@ navBtn[0].onclick = () => {
 navBtn[1].onclick = () => {
     indicator.style.top = "50%";
     indicator.style.transform = "translateY(-50%)";
+    container.classList.add('container-work');
+    if (workSlides[0].classList.contains('swiper-slide-active') && navBtn[1].classList.contains('active')) {
+        blurBg.classList.add('blur-weather');
+    }
 }
 
 navBtn[2].onclick = () => {
@@ -80,4 +86,20 @@ for (let i = 0; i < t1.length; i++) {
     }
 }
 
-//animation block
+//swiper
+
+new Swiper('.my-work__slider');
+
+//work
+/* blurBg.style.background = " url(../img/weather.png)"; */
+
+const workSlides = document.querySelectorAll(".my-work__slide");
+
+/* if (workSlides[0].classList.contains('swiper-slide-active') && navBtn[1].classList.contains('active')) {
+    blurBg.style.background = "url(../img/weather.png)";
+    alert('hihihihiihih');
+}
+
+workSlides.onclick = function() {
+    alert('hihihiih');
+} */

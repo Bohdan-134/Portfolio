@@ -1,6 +1,7 @@
 @import "null-style.scss";
 @import "content.scss";
 @import "nav.scss";
+@import "my-work.scss";
 $bgColor: #f0a800;
 body {
     font-family: 'Montserrat', sans-serif;
@@ -95,6 +96,13 @@ body {
         height: 100%;
         z-index: 2;
         backdrop-filter: blur(4px);
+        transition: 1s;
+        background-size: 100% 100%;
+    }
+    .blur-weather {
+        background: url(../img/weather1.jpg);
+        background-size: 500% 500%;
+        background-position: 0% 0%;
     }
 }
 
@@ -108,4 +116,12 @@ body {
     position: relative;
     z-index: 3;
     overflow: hidden;
+}
+
+.container-work {
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    i {
+        display: none;
+    }
 }
