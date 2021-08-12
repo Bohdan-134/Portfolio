@@ -5,9 +5,8 @@
     width: 30%;
     height: 100%;
     padding: 1.5% 0;
-    border-left: 1px solid #cf971e;
     border-radius: 0px 15px 15px 0px;
-    background-color: #d890305c;
+    background-color: #0000001c;
     z-index: 3;
     backdrop-filter: blur(3px);
     overflow: hidden;
@@ -83,37 +82,4 @@
 .active {
     position: relative;
     transition: 0.5s;
-    /*  &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 2px;
-        height: 100%;
-        animation: dotted 1s infinite;
-        background-color: brown;
-        transition: 0.5s;
-    }
-    &::before {
-        left: 0%;
-    }
-    &::after {
-        right: 20%;
-        display: none;
-    } */
-    /* @keyframes dotted {
-        0% {
-            background-color: #c06048;
-              transform: translateY(-50%) scale(1); 
-        }
-        50% {
-            background-color: #783078;
-               transform: translateY(-50%) scale(1.1); 
-        }
-        100% {
-            background-color: #c06048;
-              transform: translateY(-50%) scale(1); 
-        }
-    }  */
 }

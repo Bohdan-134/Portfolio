@@ -1,6 +1,6 @@
 const navBtn = document.querySelectorAll('.nav-button');
 const block = document.querySelectorAll('.block');
-const blurBg = document.querySelector('.blur');
+const blurBg = document.querySelector('#blur');
 const container = document.querySelector('.container');
 
 
@@ -36,6 +36,9 @@ navBtn[1].onclick = () => {
     container.classList.add('container-work');
     if (workSlides[0].classList.contains('swiper-slide-active') && navBtn[1].classList.contains('active')) {
         blurBg.classList.add('blur-weather');
+    } else if (workSlides[1].classList.contains('swiper-slide-active') && navBtn[1].classList.contains('active')) {
+        blurBg.classList.remove('blur-weather');
+        blurBg.classList.add('blur-weather1');
     }
 }
 

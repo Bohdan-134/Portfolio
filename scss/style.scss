@@ -90,7 +90,7 @@ body {
             left: 89%;
         }
     }
-    .blur {
+    #blur {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -103,6 +103,9 @@ body {
         background: url(../img/weather1.jpg);
         background-size: 500% 500%;
         background-position: 0% 0%;
+    }
+    .blur-weather1 {
+        background-color: white;
     }
 }
 
