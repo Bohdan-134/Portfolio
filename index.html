@@ -41,7 +41,7 @@
     <div class="container">
         <div class="content">
             <div class="about-me block block-active" id="tab-1">
-                <ul>
+                <ul class="about-me__words">
                     <li class="word-h2">H</li>
                     <li class="word-h2">e</li>
                     <li class="word-h2">l</li>
@@ -97,23 +97,23 @@
             <div class="contact-me block" id="tab-3">
                 <div class="contact-me__info-block">
                     <ul>
-                        <li>
+                        <li class="n1">
                             <i class='bx bxl-github'></i>
                             <a href="https://github.com/Bohdan-134">Github</a>
                         </li>
-                        <li>
+                        <li class="n1">
                             <i class='bx bx-mail-send'></i>
                             <a href="mailto:bkachmar1@gmail.com">Mailto</a>
                         </li>
-                        <li>
+                        <li class="n1">
                             <i class='bx bxl-telegram'></i>
                             <a href="https://telegram.me/kbohdan1">Telegram</a>
                         </li>
-                        <li>
+                        <li class="n1">
                             <i class='bx bx-map'></i>
                             <a href="https://goo.gl/maps/SGP5KAVVVrtpwt9v8">Kherson, Ukraine</a>
                         </li>
-                        <li>
+                        <li class="n1">
                             <i class='bx bx-mobile-alt'></i>
                             <a href="tel:+380950367016">Phone</a>
                         </li>
@@ -121,8 +121,14 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d38797.95816399699!2d32.60408466994103!3d46.64266467919544!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1628094949425!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </li>
                     </ul>
-
                 </div>
+                <form action="#" class="contact-me__form">
+                    <input type="mail" value="Mail">
+                    <input type="name" value="Name">
+                    <input type="tel" value="Tel">
+                    <textarea n cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send">
+                </form>
             </div>
         </div>
         <nav class="navigation">

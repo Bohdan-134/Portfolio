@@ -95,6 +95,8 @@ const btnBxUp = document.querySelector('.bx-chevron-up');
 const btnBxDown = document.querySelector('.bx-chevron-down');
 let e1 = 1;
 
+const workContainer = document.querySelectorAll('.my-work__info-block');
+
 function MyWorkWeather() {
     btnBxUp.style.display = "none";
 }
@@ -127,5 +129,15 @@ btnBxUp.onclick = () => {
         MyWorkRoom();
     } else if (e1 === 3) {
         MyWorkIt();
+    }
+}
+
+/* all input */
+
+const clickInput = document.querySelectorAll('input');
+
+for (let i = 0; i < clickInput.length; i++) {
+    clickInput[i].onclick = () => {
+        clickInput[i].value = '';
     }
 }
