@@ -1,23 +1,35 @@
-.my-work {}
-
-.my-work__slider {
-    height: 100%;
-    .my-work__slider-wrapper {
-        .my-work__slide {
+.my-work {
+    overflow-y: scroll;
+    .my-work__container-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        i {
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .bx-chevron-up {
+            top: 2%;
+        }
+        .bx-chevron-down {
+            bottom: 2%;
+            height: 10px;
+        }
+        .my-work__container {
+            padding: 5% 3%;
             width: 100%;
             height: 100%;
-            background-color: transparent;
-            position: relative;
-            .photo-work__wrapper {
-                position: absolute;
-                width: 100%;
-                height: 60%;
-                background: url(../img/weather.png);
-                background-size: 150% 150%;
-                cursor: pointer;
-                animation: workBg 15s infinite;
-                z-index: 1;
-                @keyframes workBg {
+            .my-work__image {
+                width: 95%;
+                height: 65%;
+                border-radius: 15px;
+                margin: auto;
+                transition: 1s;
+                animation: bg_mw_img 8s infinite;
+                @keyframes bg_mw_img {
                     0% {
                         background-position: 0% 0%;
                     }
@@ -25,33 +37,42 @@
                         background-position: 100% 0%;
                     }
                     50% {
-                        background-position: 0% 100%;
+                        background-position: 100% 100%;
                     }
                     75% {
-                        background-position: 100% 100%;
+                        background-position: 0% 100%;
                     }
                     100% {
                         background-position: 0% 0%;
                     }
                 }
-                .top-layer {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                    /* background-color: #78307873; */
+                .my-work__image-s {
                     position: relative;
                     z-index: 2;
-                    transition: 0.5s;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #5f255fc7;
+                    border-radius: 15px;
+                    transition: 1s;
+                    cursor: pointer;
                     &:hover {
-                        background-color: #783078cf;
-                    }
-                    i {
-                        position: static;
-                        color: white;
+                        background-color: #5f255f94;
                     }
                 }
             }
+            .weather {
+                background: url(../img/weather.png) no-repeat;
+                background-size: 130% 130%;
+            }
+            .ROOM {
+                background: url(../img/ROOM.png) no-repeat;
+                background-size: 130% 130%;
+            }
+            .IT {
+                background: url(../img/StudioIT.png) no-repeat;
+                background-size: 130% 130%;
+            }
+            .my-work__info-block {}
         }
     }
 }

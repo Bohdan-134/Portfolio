@@ -1,7 +1,8 @@
 const navBtn = document.querySelectorAll('.nav-button');
 const block = document.querySelectorAll('.block');
-const blurBg = document.querySelector('#blur');
+
 const container = document.querySelector('.container');
+const body = document.body;
 
 
 navBtn.forEach(function(item) {
@@ -28,28 +29,25 @@ const indicator = document.querySelector('.indicator');
 navBtn[0].onclick = () => {
     indicator.style.top = "0%";
     indicator.style.transform = "none";
+    body.style.background = "#f0a800";
 }
 
 navBtn[1].onclick = () => {
     indicator.style.top = "50%";
     indicator.style.transform = "translateY(-50%)";
-    container.classList.add('container-work');
-    if (workSlides[0].classList.contains('swiper-slide-active') && navBtn[1].classList.contains('active')) {
-        blurBg.classList.add('blur-weather');
-    } else if (workSlides[1].classList.contains('swiper-slide-active') && navBtn[1].classList.contains('active')) {
-        blurBg.classList.remove('blur-weather');
-        blurBg.classList.add('blur-weather1');
-    }
+    body.style.background = "#783078";
 }
 
 navBtn[2].onclick = () => {
     indicator.style.top = "66.8%";
     indicator.style.transform = "none";
+    body.style.background = "#c06048";
 }
 
 /* button cert */
 const certificateContainer = document.querySelector('.about-me__certificate');
 const certificateBtn = document.querySelector('.button-certificate');
+
 
 
 certificateBtn.onclick = () => {
@@ -89,20 +87,6 @@ for (let i = 0; i < t1.length; i++) {
     }
 }
 
-//swiper
 
-new Swiper('.my-work__slider');
 
-//work
-/* blurBg.style.background = " url(../img/weather.png)"; */
-
-const workSlides = document.querySelectorAll(".my-work__slide");
-
-/* if (workSlides[0].classList.contains('swiper-slide-active') && navBtn[1].classList.contains('active')) {
-    blurBg.style.background = "url(../img/weather.png)";
-    alert('hihihihiihih');
-}
-
-workSlides.onclick = function() {
-    alert('hihihiih');
-} */
+/* my-work */
