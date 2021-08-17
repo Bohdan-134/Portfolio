@@ -1,22 +1,23 @@
 .my-work {
-    overflow-y: scroll;
     .my-work__container-wrapper {
         width: 100%;
         height: 100%;
         position: relative;
+        overflow: hidden;
         i {
             position: absolute;
             color: white;
-            font-size: 20px;
+            font-size: 30px;
             left: 50%;
             transform: translateX(-50%);
+            cursor: pointer;
         }
         .bx-chevron-up {
             top: 2%;
+            display: none;
         }
         .bx-chevron-down {
-            bottom: 2%;
-            height: 10px;
+            top: 95%;
         }
         .my-work__container {
             padding: 5% 3%;

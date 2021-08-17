@@ -90,3 +90,42 @@ for (let i = 0; i < t1.length; i++) {
 
 
 /* my-work */
+
+const btnBxUp = document.querySelector('.bx-chevron-up');
+const btnBxDown = document.querySelector('.bx-chevron-down');
+let e1 = 1;
+
+function MyWorkWeather() {
+    btnBxUp.style.display = "none";
+}
+
+function MyWorkRoom() {
+    btnBxUp.style.display = "block";
+    btnBxDown.style.display = "block";
+}
+
+function MyWorkIt() {
+    btnBxDown.style.display = "none";
+}
+
+btnBxDown.onclick = () => {
+    e1++;
+    if (e1 === 1) {
+        MyWorkWeather()
+    } else if (e1 === 2) {
+        MyWorkRoom();
+    } else if (e1 === 3) {
+        MyWorkIt();
+    }
+}
+
+btnBxUp.onclick = () => {
+    e1--;
+    if (e1 === 1) {
+        MyWorkWeather()
+    } else if (e1 === 2) {
+        MyWorkRoom();
+    } else if (e1 === 3) {
+        MyWorkIt();
+    }
+}
