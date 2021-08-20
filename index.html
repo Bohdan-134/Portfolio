@@ -122,12 +122,12 @@
                         </li>
                     </ul>
                 </div>
-                <form action="#" class="contact-me__form">
-                    <input type="mail" value="Mail">
-                    <input type="name" value="Name">
-                    <input type="tel" value="Tel">
-                    <textarea n cols="30" rows="10"></textarea>
-                    <input type="submit" value="Send">
+                <form action="/telegram.php" method="POST" class="contact-me__form">
+                    <input type="mail" name="user_email" value="Mail">
+                    <input type="name" name="user_name" value="Name">
+                    <input type="tel" name="user_phone" value="Tel">
+                    <textarea cols="30" name="msg" rows="10"></textarea>
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </div>

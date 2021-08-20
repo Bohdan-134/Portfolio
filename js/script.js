@@ -12,6 +12,7 @@ navBtn.forEach(function(item) {
         let currentTab = document.querySelector(tabId);
         navBtn.forEach(function(item) {
             item.classList.remove('active');
+            navigation.classList.remove('navigation_contact');
         });
         block.forEach(function(item) {
             item.classList.remove('block-active');
@@ -38,10 +39,15 @@ navBtn[1].onclick = () => {
     body.style.background = "#783078";
 }
 
+//nav
+
+const navigation = document.querySelector('.navigation');
+
 navBtn[2].onclick = () => {
     indicator.style.top = "66.8%";
     indicator.style.transform = "none";
     body.style.background = "#c06048";
+    navigation.classList.add('navigation_contact');
 }
 
 /* button cert */
@@ -141,3 +147,13 @@ for (let i = 0; i < clickInput.length; i++) {
         clickInput[i].value = '';
     }
 }
+
+//btn contact-me
+
+const contactMeBtn = document.querySelector('#contactMe');
+
+function contactMeBtnClick() {
+    navBtn[2].click();
+}
+
+contactMeBtn.onclick = contactMeBtnClick;

@@ -88,7 +88,6 @@
     button {
         background-color: transparent;
         border: 2px solid #783078;
-        background-color: transparent;
         border-radius: 15px;
         padding: 2% 4%;
         color: #c06048;
@@ -198,12 +197,27 @@
             text-align: center;
             color: #7b3375;
             font-size: 17px;
+            transition: 0.5s;
+            &:hover {
+                border: 1px solid #f0a800;
+            }
         }
-        input[type="submit"] {
-            background-color: #7b3375;
+        button {
+            width: 90%;
+            height: 10%;
+            background-color: #783078;
             color: white;
             font-size: 12px;
             cursor: pointer;
+            position: relative;
+            border: 1px solid #783078;
+            overflow: hidden;
+            transition: 0.5s;
+            border-radius: 15px;
+            &:hover {
+                color: #783078;
+                background-color: transparent;
+            }
         }
         textarea {
             width: 90%;
@@ -216,6 +230,10 @@
             padding: 2% 5%;
             color: #7b3375;
             font-size: 15px;
+            transition: 0.5s;
+            &:hover {
+                border: 1px solid #f0a800;
+            }
         }
     }
 }
