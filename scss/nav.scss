@@ -137,12 +137,17 @@
 
 @media (max-width:400px) {
     .navigation {
-        right: -100%;
-        top: 0%;
+        right: auto;
+        top: auto;
+        bottom: -100%;
         width: 100%;
         border-radius: 0px 0px 0px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+}
+
+.open {
+    bottom: 0%;
 }

@@ -159,3 +159,14 @@ function contactMeBtnClick() {
 contactMeBtn.onclick = contactMeBtnClick;
 
 // burger-menu
+
+const mBtn = document.querySelector('.btn-m');
+
+mBtn.onclick = function() {
+    if (navigation.classList.contains('open')) {
+        navigation.classList.remove('open');
+    } else {
+        navigation.classList.add('open');
+    }
+    /*   navigation.style.bottom = "0%"; */
+}
