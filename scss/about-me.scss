@@ -102,3 +102,11 @@
         }
     }
 }
+
+@media (max-width:400px) {
+    .about-me {
+        .about-me__text {
+            margin: 15% 0;
+        }
+    }
+}

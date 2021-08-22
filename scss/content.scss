@@ -41,16 +41,29 @@
     }
 }
 
-.bx-menu {
-    cursor: pointer;
-    position: fixed;
-    color: white;
-    top: 2%;
-    right: 2%;
-}
-
 @media (max-width:400px) {
     .content {
         width: 100%;
+        .bx-chevron-up {
+            cursor: pointer;
+            position: fixed;
+            color: white;
+            top: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 2%;
+            animation: menu-arr 1s infinite;
+            @keyframes menu-arr {
+                0% {
+                    bottom: 2%;
+                }
+                50% {
+                    bottom: 3%;
+                }
+                100% {
+                    bottom: 2%;
+                }
+            }
+        }
     }
 }
