@@ -168,5 +168,10 @@ mBtn.onclick = function() {
     } else {
         navigation.classList.add('open');
     }
-    /*   navigation.style.bottom = "0%"; */
 }
+
+
+/* windowh */
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
