@@ -1,4 +1,5 @@
 .contact-me {
+    overflow: hidden;
     .contact-me__info-block {
         width: 40%;
         height: 95%;
@@ -14,6 +15,7 @@
         align-items: center;
         justify-content: center;
         padding: 1%;
+        z-index: 3;
         ul {
             width: 90%;
             li {
@@ -115,6 +117,18 @@
             &:hover {
                 border: 1px solid #f0a800;
             }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .contact-me {
+        .contact-me__info-block {
+            position: absolute;
+            width: 95%;
+            left: auto;
+            right: 50%;
+            transform: translateY(-50%) translateX(50%);
         }
     }
 }
