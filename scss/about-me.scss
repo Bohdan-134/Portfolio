@@ -103,7 +103,30 @@
     }
 }
 
-@media (max-width:400px) {
+
+/* @media (max-width:400px) {
+    .about-me {
+        .about-me__certificate {
+            right: 50%;
+            transform: translateX(50%);
+            top: -16%;
+            width: 75%;
+            height: 20%;
+        }
+        ul {
+            font-size: 60px;
+        }
+        .about-me__text {
+            margin: 15% 0;
+        }
+        button {
+            width: 50%;
+            padding: 6% 6%;
+        }
+    }
+} */
+
+@media screen and (min-width: 201px) and (max-width: 400px) {
     .about-me {
         .about-me__certificate {
             right: 50%;

@@ -179,3 +179,17 @@ mBtn.onclick = function openMenu() {
 
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
+/* contact-me-card */
+
+const contactInfoBtn = document.querySelector('.contact_info-btn');
+const contactMeInfoBlock = document.querySelector('.contact-me__info-block');
+
+contactInfoBtn.onclick = () => {
+    if (contactMeInfoBlock.classList.contains('open-i-contact')) {
+        contactMeInfoBlock.classList.remove('open-i-contact');
+    } else {
+        contactMeInfoBlock.classList.add('open-i-contact');
+    }
+}
