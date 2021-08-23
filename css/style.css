@@ -560,14 +560,6 @@ h6 {
     }
 } */
 @media screen and (min-width: 201px) and (max-width: 400px) {
-  .about-me .about-me__certificate {
-    right: 50%;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-    top: -16%;
-    width: 75%;
-    height: 20%;
-  }
   .about-me ul {
     font-size: 60px;
   }
@@ -577,6 +569,14 @@ h6 {
   .about-me button {
     width: 50%;
     padding: 6% 6%;
+  }
+  .about-me .about-me__certificate {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    top: -16%;
+    width: 75%;
+    height: 20%;
   }
 }
 .my-work .my-work__container-wrapper {
