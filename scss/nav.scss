@@ -137,14 +137,36 @@
 
 @media (max-width:400px) {
     .navigation {
+        height: 100vh;
         right: auto;
         top: auto;
-        bottom: -100%;
+        bottom: -200%;
         width: 100%;
         border-radius: 0px 0px 0px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #000000c4;
+        justify-content: center;
+        .my-info {
+            .wrapper-img {
+                width: 180px;
+                height: 180px;
+                margin: 15px 0px 10px;
+            }
+            .profession {
+                margin-bottom: 15px;
+            }
+        }
+        ul {
+            width: 90%;
+            .nav-button {
+                padding: 10% 0;
+            }
+            .indicator {
+                display: none;
+            }
+        }
     }
 }
 

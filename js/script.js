@@ -13,6 +13,8 @@ navBtn.forEach(function(item) {
         navBtn.forEach(function(item) {
             item.classList.remove('active');
             navigation.classList.remove('navigation_contact');
+            navigation.classList.remove('open');
+            mBtn.classList.remove('btn-r');
         });
         block.forEach(function(item) {
             item.classList.remove('block-active');
@@ -162,11 +164,13 @@ contactMeBtn.onclick = contactMeBtnClick;
 
 const mBtn = document.querySelector('.btn-m');
 
-mBtn.onclick = function() {
+mBtn.onclick = function openMenu() {
     if (navigation.classList.contains('open')) {
         navigation.classList.remove('open');
+        mBtn.classList.remove('btn-r');
     } else {
         navigation.classList.add('open');
+        mBtn.classList.add('btn-r');
     }
 }
 

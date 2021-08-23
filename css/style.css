@@ -94,6 +94,9 @@ h6 {
   position: relative;
   overflow-y: scroll;
 }
+.content .bx-chevron-up {
+  display: none;
+}
 .content .block {
   width: 100%;
   height: 100%;
@@ -138,6 +141,7 @@ h6 {
     width: 100%;
   }
   .content .bx-chevron-up {
+    display: block;
     cursor: pointer;
     position: fixed;
     color: white;
@@ -149,6 +153,8 @@ h6 {
     -webkit-animation: menu-arr 1s infinite;
             animation: menu-arr 1s infinite;
     z-index: 50;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
   @-webkit-keyframes menu-arr {
     0% {
@@ -171,6 +177,10 @@ h6 {
     100% {
       bottom: 2%;
     }
+  }
+  .content .btn-r {
+    -webkit-transform: translateX(-50%) rotate(180deg);
+            transform: translateX(-50%) rotate(180deg);
   }
 }
 .navigation {
@@ -348,9 +358,10 @@ h6 {
 
 @media (max-width: 400px) {
   .navigation {
+    height: 100vh;
     right: auto;
     top: auto;
-    bottom: -100%;
+    bottom: -200%;
     width: 100%;
     border-radius: 0px 0px 0px 0px;
     display: -webkit-box;
@@ -363,6 +374,27 @@ h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: #000000c4;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navigation .my-info .wrapper-img {
+    width: 180px;
+    height: 180px;
+    margin: 15px 0px 10px;
+  }
+  .navigation .my-info .profession {
+    margin-bottom: 15px;
+  }
+  .navigation ul {
+    width: 90%;
+  }
+  .navigation ul .nav-button {
+    padding: 10% 0;
+  }
+  .navigation ul .indicator {
+    display: none;
   }
 }
 .open {
@@ -1079,7 +1111,7 @@ h6 {
   -webkit-animation: slide-in-bck-center 0.7s 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-in-bck-center 0.7s 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.block-active form input[type=submit] {
+.block-active form button {
   -webkit-animation: slide-in-bck-center 0.7s 1.7s both;
           animation: slide-in-bck-center 0.7s 1.7s both;
 }
