@@ -109,13 +109,13 @@ body {
     backdrop-filter: blur(2px);
 }
 
-@media(max-width: 800px) {
+@media(max-width: 600px) {
     body {
+        height: 100vh; 
         height: calc(var(--vh, 1vh) * 100);
     }
     .container {
-        min-width: 100%;
-        min-height: 100%;
+        height: calc(var(--vh, 1vh) * 100);
         border-radius: none;
         box-shadow: none;
     }

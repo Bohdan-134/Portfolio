@@ -47,9 +47,7 @@
 @media (max-width: 800px) {
     .content {
         width: 100%;
-        .block{
-            height: 100vh !important;
-        }
+       height: 100%;
         .bx-chevron-up {
             display: block;
             cursor: pointer;

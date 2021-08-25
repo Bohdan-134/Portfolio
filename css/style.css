@@ -139,9 +139,7 @@ h6 {
 @media (max-width: 800px) {
   .content {
     width: 100%;
-  }
-  .content .block {
-    height: 100vh !important;
+    height: 100%;
   }
   .content .bx-chevron-up {
     display: block;
@@ -541,31 +539,7 @@ h6 {
   top: -100%;
 }
 
-/* @media (max-width:400px) {
-    .about-me {
-        .about-me__certificate {
-            right: 50%;
-            transform: translateX(50%);
-            top: -16%;
-            width: 75%;
-            height: 20%;
-        }
-        ul {
-            font-size: 60px;
-        }
-        .about-me__text {
-            margin: 15% 0;
-        }
-        button {
-            width: 50%;
-            padding: 6% 6%;
-        }
-    }
-} */
-@media screen and (min-width: 201px) and (max-width: 800px) {
-  .about-me {
-    min-height: 100vh !important;
-  }
+@media screen and (min-width: 201px) and (max-width: 600px) {
   .about-me ul {
     font-size: 60px;
   }
@@ -849,7 +823,7 @@ h6 {
   border: 1px solid #f0a800;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .contact-me {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1284,14 +1258,14 @@ body i:nth-child(19) {
           backdrop-filter: blur(2px);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   body {
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
 
   .container {
-    min-width: 100%;
-    min-height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
     border-radius: none;
     -webkit-box-shadow: none;
             box-shadow: none;
