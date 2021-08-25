@@ -1304,7 +1304,7 @@ body .bx-body:nth-child(10) {
           animation-delay: 9s;
 }
 body .bx-body:nth-child(11) {
-  left: 89%;
+  right: 8%;
   -webkit-animation-delay: 17s;
           animation-delay: 17s;
 }
@@ -1344,7 +1344,7 @@ body .bx-body:nth-child(18) {
           animation-delay: 16s;
 }
 body .bx-body:nth-child(19) {
-  left: 89%;
+  right: 10%;
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
 }
@@ -1407,5 +1407,7 @@ body .bx-body:nth-child(19) {
     border-radius: none;
     -webkit-box-shadow: none;
             box-shadow: none;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
   }
 }

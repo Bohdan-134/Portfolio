@@ -61,7 +61,7 @@ body {
             animation-delay: 9s;
         }
         &:nth-child(11) {
-            left: 89%;
+            right: 8%;
             animation-delay: 17s;
         }
         &:nth-child(12) {
@@ -93,7 +93,7 @@ body {
             animation-delay: 16s;
         }
         &:nth-child(19) {
-            left: 89%;
+            right: 10%;
             animation-delay: 6s;
         }
     }
@@ -134,5 +134,6 @@ body {
         width: 100%;
         border-radius: none;
         box-shadow: none;
+        backdrop-filter: blur(0px);
     }
 }
