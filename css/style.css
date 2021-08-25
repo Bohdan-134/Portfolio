@@ -145,6 +145,7 @@ h6 {
     display: block;
     cursor: pointer;
     position: fixed;
+    font-size: 30px;
     color: white;
     top: auto;
     left: 50%;
@@ -426,9 +427,12 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     background-color: #000000c4;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .navigation .my-info {
+    margin-top: 5%;
   }
   .navigation .my-info .wrapper-img {
     width: 180px;
@@ -728,6 +732,8 @@ h6 {
   color: #793078;
   font-size: 35px;
   z-index: 50;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .contact-me .contact-me__info-block {
   width: 40%;
@@ -873,6 +879,10 @@ h6 {
   border: 1px solid #f0a800;
 }
 
+.colorI {
+  color: #c06048 !important;
+}
+
 @media (max-width: 600px) {
   .contact-me {
     display: -webkit-box;
@@ -894,6 +904,9 @@ h6 {
     bottom: -100%;
     -webkit-transform: none;
             transform: none;
+  }
+  .contact-me .contact-me__info-block ul li a {
+    font-size: 20px;
   }
   .contact-me .open-i-contact {
     bottom: 0%;
@@ -1062,6 +1075,26 @@ h6 {
   }
   100% {
     top: -16%;
+  }
+}
+.block-active .contact_info-btn {
+  -webkit-animation: contactBtnI 0.5s;
+          animation: contactBtnI 0.5s;
+}
+@-webkit-keyframes contactBtnI {
+  0% {
+    left: -4%;
+  }
+  100% {
+    left: 2%;
+  }
+}
+@keyframes contactBtnI {
+  0% {
+    left: -4%;
+  }
+  100% {
+    left: 2%;
   }
 }
 .block-active .contact-me__info-block {

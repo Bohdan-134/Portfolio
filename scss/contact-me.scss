@@ -13,7 +13,10 @@
         color: #793078;
         font-size: 35px;
         z-index: 50;
+        transition: 0.5s;
+       
     }
+    
     .contact-me__info-block {
         width: 40%;
         height: 95%;
@@ -132,6 +135,10 @@
     }
 }
 
+.colorI {
+    color: #c06048 !important;
+}
+
 @media (max-width:600px) {
     .contact-me {
         display: flex;
@@ -147,6 +154,13 @@
             left: auto;
             bottom: -100%;
             transform: none;
+            ul{
+                li{
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }  
         }
         .open-i-contact {
             bottom: 0%;

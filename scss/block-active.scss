@@ -77,6 +77,17 @@
         }
     }
     //contact-me
+    .contact_info-btn {
+        animation: contactBtnI 0.5s;
+        @keyframes contactBtnI {
+            0%{
+                left: -4%;
+            }
+            100%{
+                left: 2%;
+            }
+        }
+    }
     .contact-me__info-block {
         animation: info-block 0.5s both;
         @keyframes info-block {
