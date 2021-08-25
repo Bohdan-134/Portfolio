@@ -171,6 +171,8 @@ mBtn.onclick = function openMenu() {
     } else {
         navigation.classList.add('open');
         mBtn.classList.add('btn-r');
+        navigation.classList.remove('nav-animation');
+        navigation.classList.add('nav-animation__mobile');
     }
 }
 
