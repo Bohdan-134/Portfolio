@@ -563,6 +563,9 @@ h6 {
     }
 } */
 @media screen and (min-width: 201px) and (max-width: 400px) {
+  .about-me {
+    min-height: 100vh !important;
+  }
   .about-me ul {
     font-size: 60px;
   }
