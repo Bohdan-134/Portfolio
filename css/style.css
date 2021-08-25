@@ -136,7 +136,7 @@ h6 {
   width: 100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .content {
     width: 100%;
   }
@@ -359,7 +359,7 @@ h6 {
   text-shadow: 0px 0px 3px #7b3375;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .navigation {
     height: 100vh;
     right: auto;
@@ -562,7 +562,7 @@ h6 {
         }
     }
 } */
-@media screen and (min-width: 201px) and (max-width: 400px) {
+@media screen and (min-width: 201px) and (max-width: 800px) {
   .about-me {
     min-height: 100vh !important;
   }
@@ -1284,7 +1284,7 @@ body i:nth-child(19) {
           backdrop-filter: blur(2px);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   body {
     height: calc(var(--vh, 1vh) * 100);
   }
