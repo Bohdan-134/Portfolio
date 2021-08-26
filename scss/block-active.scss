@@ -64,15 +64,80 @@
     #contactMe {
         animation: bounce-in-top 1.1s 1.2s both;
     }
-    .about-me__certificate {
-        transition: 0.5s;
-        animation: certificate 0.5s 2.5s both;
-        @keyframes certificate {
-            0% {
-                top: -20%;
+    .about-me__progress {
+        animation: widthP 2s 2s both;
+        @keyframes widthP {
+            0%{
+                width: 0%;
             }
-            100% {
-                top: -16%;
+            100%{
+                width: 60%;
+            }
+        }
+        div {
+            .bg {
+                animation:AProgress 1s both;
+            }
+            i {
+                animation: IProgress 1s both;
+            }
+            @keyframes IProgress {
+                0%{
+                    transform: translateX(-50%) scale(0.2);
+                    opacity: 0;
+                }
+                100%{
+                    transform: translateX(-50%) scale(1);
+                    opacity: 1;
+                }
+            }
+            &:nth-child(1){
+               .bg{
+                   animation-delay: 3.5s;
+               }
+               i{
+                animation-delay: 3.5s;
+               }
+            }
+            &:nth-child(2){
+                .bg{
+                    animation-delay: 3.8s;
+                }
+                i{
+                    animation-delay: 3.8s;
+                   }
+            }
+            &:nth-child(3){
+                .bg{
+                    animation-delay: 4.1s;
+                }
+                i{
+                    animation-delay: 4.1s;
+                   }
+            }
+            &:nth-child(4){
+                .bg{
+                    animation-delay: 4.4s;
+                }
+                i{
+                    animation-delay: 4.4s;
+                   }
+            }
+            &:nth-child(5){
+                .bg{
+                    animation-delay: 4.7s;
+                }
+                i{
+                    animation-delay: 4.7s;
+                   }
+            }
+        }
+        @keyframes AProgress {
+            0%{
+                height: 0%;
+            }
+            100%{
+                height: 100%;
             }
         }
     }

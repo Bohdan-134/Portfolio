@@ -52,23 +52,6 @@ navBtn[2].onclick = () => {
     navigation.classList.add('navigation_contact');
 }
 
-/* button cert */
-const certificateContainer = document.querySelector('.about-me__certificate');
-const certificateBtn = document.querySelector('.button-certificate');
-
-
-
-certificateBtn.onclick = () => {
-    if (certificateContainer.classList.contains('certificate-active')) {
-        certificateContainer.classList.remove('certificate-active');
-    } else {
-        certificateContainer.classList.add('certificate-active');
-    }
-}
-
-certificateBtn.onmouseenter = () => certificateContainer.style.top = "-15%";
-certificateBtn.onmouseleave = () => certificateContainer.style.top = "-16%";
-
 // h2
 
 const h2Word = document.querySelectorAll('.word-h2');
@@ -99,46 +82,7 @@ for (let i = 0; i < t1.length; i++) {
 
 /* my-work */
 
-const btnBxUp = document.querySelector('.bx-chevron-up');
-const btnBxDown = document.querySelector('.bx-chevron-down');
-let e1 = 1;
 
-const workContainer = document.querySelectorAll('.my-work__info-block');
-
-function MyWorkWeather() {
-    btnBxUp.style.display = "none";
-}
-
-function MyWorkRoom() {
-    btnBxUp.style.display = "block";
-    btnBxDown.style.display = "block";
-}
-
-function MyWorkIt() {
-    btnBxDown.style.display = "none";
-}
-
-btnBxDown.onclick = () => {
-    e1++;
-    if (e1 === 1) {
-        MyWorkWeather()
-    } else if (e1 === 2) {
-        MyWorkRoom();
-    } else if (e1 === 3) {
-        MyWorkIt();
-    }
-}
-
-btnBxUp.onclick = () => {
-    e1--;
-    if (e1 === 1) {
-        MyWorkWeather()
-    } else if (e1 === 2) {
-        MyWorkRoom();
-    } else if (e1 === 3) {
-        MyWorkIt();
-    }
-}
 
 /* all input */
 
