@@ -595,40 +595,100 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: scroll;
 }
 .my-work div {
-  width: calc(100%/3);
-  border: 1px solid black;
-  height: 100%;
-  cursor: pointer;
+  width: 28%;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+  height: 80%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: #783078;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 1.5%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
-.my-work div:hover {
-  width: calc(100%/1.5);
-}
-.my-work div:nth-child(1) {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgba(9, 9, 121, 0.5)), color-stop(65%, rgba(1, 181, 234, 0.5))), url(../img/StudioIT.png) no-repeat;
-  background: linear-gradient(0deg, rgba(9, 9, 121, 0.5) 35%, rgba(1, 181, 234, 0.5) 65%), url(../img/StudioIT.png) no-repeat;
-  background-position: 50% 50%;
-  background-size: 300% 100%;
-}
-.my-work div:nth-child(2) {
-  background: url(../img/weather.png) no-repeat;
-  background-position: 50% 50%;
-  background-size: 300% 100%;
-}
-.my-work div:nth-child(3) {
-  background: url(../img/ROOM.png) no-repeat;
-  background-position: 50% 50%;
-  background-size: 300% 100%;
+.my-work div img {
+  border-radius: 15px;
+  width: 100%;
+  height: 40%;
+  -webkit-transform: translateZ(40px);
+          transform: translateZ(40px);
 }
 .my-work div h3 {
   font-size: 20px;
   color: white;
-  font-weight: 900;
+  font-weight: 600;
+  margin-top: 10%;
+  -webkit-transform: translateZ(40px);
+          transform: translateZ(40px);
+}
+.my-work div ul {
+  margin-top: 5%;
+}
+.my-work div ul li {
+  color: #c06048;
+  font-size: 13px;
+  margin-top: 30%;
+}
+.my-work div a {
+  width: 50%;
+  height: 50px;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  -webkit-transform: translate(-50%, 1px) translateZ(40px);
+          transform: translate(-50%, 1px) translateZ(40px);
+  background-color: brown;
+  border-radius: 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+@media (max-width: 800px) {
+  .my-work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .contact-me {
   overflow: hidden;
   display: -webkit-box;
