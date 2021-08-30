@@ -15,6 +15,7 @@
         margin: 6% 0;
         letter-spacing: 1px;
         line-height: 1.3em;
+        max-width: 90%;
     }
     button {
         background-color: transparent;
@@ -47,49 +48,102 @@
             top: -100%;
         }
     }
-    .about-me__progress {
+    .about-me__progress-wrapper {
         width: 60%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        border-bottom: 1px solid #ae7420;
         margin-bottom: 10%;
-        div {
-            width: 5px;
-            position: relative;
-            transition: 0.5s;
+        .about-me__progress {
+            width: 100%;
             display: flex;
             align-items: flex-end;
-            .bg {
-                width: 100%;
-                background-color: #ae7420;
-                border-radius: 5px 5px 0px 0px;
-            }
-            i {
-                position: absolute;
-                bottom: -30px;
-                left: 50%;
-                transform: translateX(-50%);
-                color: #c06048;
-                font-size: 20px;
-            }
-            &:nth-child(1){
-                height: 40px;
-            }
-            &:nth-child(2){
-                height: 38px;
-            }
-            &:nth-child(3){
-                height: 35px;
-            }
-            &:nth-child(4){
-                height: 20px;
-            }
-            &:nth-child(5){
-                height: 20px;
+            justify-content: space-around;
+            border-bottom: 1px solid #ae7420;
+            div {
+                width: 5px;
+                position: relative;
+                transition: 0.5s;
+                display: flex;
+                align-items: flex-end;
+                .bg {
+                    width: 100%;
+                    background-color: #ae7420;
+                    border-radius: 5px 5px 0px 0px;
+                }
+                i {
+                    position: absolute;
+                    bottom: -30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #c06048;
+                    font-size: 20px;
+                }
+                &:nth-child(1){
+                    height: 40px;
+                }
+                &:nth-child(2){
+                    height: 38px;
+                }
+                &:nth-child(3){
+                    height: 35px;
+                }
+                &:nth-child(4){
+                    height: 20px;
+                }
+                &:nth-child(5){
+                    height: 20px;
+                }
             }
         }
     }
+}
+
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .about-me {
+        padding: 8% 5%;
+        ul {          
+            font-size: 70px;
+        }
+        .about-me__text {
+            font-size: 25px;
+            margin: 10% 0;  
+            width: 100%;
+        }
+        button {
+            width: 100%;
+            padding: 4% 0%;
+        }
+        .about-me__progress-wrapper {
+            width: 100%;
+            margin-bottom: 20%;
+            .about-me__progress {
+                div {
+                    i {
+                        bottom: -70px;
+                        font-size: 35px;
+                    }
+                    &:nth-child(1){
+                        height: 100px;
+                    }
+                    &:nth-child(2){
+                        height: 98px;
+                    }
+                    &:nth-child(3){
+                        height: 95px;
+                    }
+                    &:nth-child(4){
+                        height: 80px;
+                    }
+                    &:nth-child(5){
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 @media (max-width:600px) {
@@ -112,9 +166,32 @@
             width: 75%;
             height: 20%;
         }
-        .about-me__progress {
-            width: 100% !important;
-            margin: 0 0 20% 0;
+        .about-me__progress-wrapper{
+            width: 100%;
+            .about-me__progress {
+               margin: 0 0 20% 0;
+               div {
+                &:nth-child(1){
+                    height: 90px;
+                }
+                &:nth-child(2){
+                    height: 88px;
+                }
+                &:nth-child(3){
+                    height: 85px;
+                }
+                &:nth-child(4){
+                    height: 70px;
+                }
+                &:nth-child(5){
+                    height: 70px;
+                }
+                i {
+                    font-size: 30px;
+                    bottom: -50px;
+                }
+               }
+           }
         }
     }
 }

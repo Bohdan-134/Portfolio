@@ -136,7 +136,7 @@ h6 {
   width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .content {
     width: 100%;
     height: 100%;
@@ -212,6 +212,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 40%;
 }
 .navigation .my-info .wrapper-img {
   background-color: #c06048;
@@ -226,14 +229,12 @@ h6 {
   font-weight: 600;
   letter-spacing: 0.1em;
   font-size: 19px;
-  margin: 10px 0px 5px;
   -webkit-animation: bounce-in-top 1.1s 0.2s both;
           animation: bounce-in-top 1.1s 0.2s both;
 }
 .navigation .my-info .profession {
   color: #a76f23;
   font-size: 13px;
-  margin-bottom: 10px;
   -webkit-animation: bounce-in-top 1.1s 0.4s both;
           animation: bounce-in-top 1.1s 0.4s both;
 }
@@ -276,11 +277,25 @@ h6 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.navigation ul {
-  margin-top: 15%;
+.navigation .nav-btn__block {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60%;
 }
-.navigation ul .nav-button {
+.navigation .nav-btn__block .nav-button {
+  width: 100%;
   text-align: center;
   cursor: pointer;
   color: #ae7420;
@@ -290,19 +305,19 @@ h6 {
   transition: 0.4s;
   padding: 6% 0;
 }
-.navigation ul .nav-button:nth-child(2) {
+.navigation .nav-btn__block .nav-button:nth-child(2) {
   -webkit-animation: slide-in-right 0.5s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-in-right 0.5s 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.navigation ul .nav-button:nth-child(3) {
+.navigation .nav-btn__block .nav-button:nth-child(3) {
   -webkit-animation: slide-in-right 0.5s 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-in-right 0.5s 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.navigation ul .nav-button:nth-child(4) {
+.navigation .nav-btn__block .nav-button:nth-child(4) {
   -webkit-animation: slide-in-right 0.5s 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-in-right 0.5s 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.navigation ul .nav-button:hover {
+.navigation .nav-btn__block .nav-button:hover {
   background-color: #ffffff26;
 }
 @-webkit-keyframes slide-in-right {
@@ -328,14 +343,6 @@ h6 {
             transform: translateX(0);
     opacity: 1;
   }
-}
-.navigation ul .indicator {
-  position: absolute;
-  width: 3px;
-  height: calc(100%/3);
-  background-color: brown;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .active {
@@ -408,32 +415,54 @@ h6 {
           animation: bounce-in-top 1.1s 0.9s both;
 }
 
-@media (max-width: 800px) {
+@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .navigation .my-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navigation .my-info .wrapper-img {
+    width: 150px;
+    height: 150px;
+  }
+  .navigation .my-info .my-names {
+    margin: 5% 0;
+    font-size: 22px;
+  }
+  .navigation .my-info .profession {
+    margin-bottom: 5%;
+    font-size: 16px;
+  }
+  .navigation .my-info ul {
+    width: 80%;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .navigation .my-info ul li i {
+    font-size: 22px;
+  }
+  .navigation ul {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .navigation ul li {
+    margin: 8% 0;
+  }
+}
+@media (max-width: 600px) {
   .navigation {
-    height: 100%;
     right: auto;
     top: auto;
     bottom: -200%;
     width: 100%;
     border-radius: 0px 0px 0px 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background-color: #000000c4;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
     overflow-y: scroll;
-  }
-  .navigation .my-info {
-    margin-top: 5%;
   }
   .navigation .my-info .wrapper-img {
     width: 150px;
@@ -449,9 +478,6 @@ h6 {
   .navigation ul .nav-button {
     padding: 0;
     margin: 20% 0;
-  }
-  .navigation ul .indicator {
-    display: none;
   }
 }
 .open {
@@ -485,6 +511,7 @@ h6 {
   margin: 6% 0;
   letter-spacing: 1px;
   line-height: 1.3em;
+  max-width: 90%;
 }
 .about-me button {
   background-color: transparent;
@@ -518,8 +545,12 @@ h6 {
   content: "";
   top: -100%;
 }
-.about-me .about-me__progress {
+.about-me .about-me__progress-wrapper {
   width: 60%;
+  margin-bottom: 10%;
+}
+.about-me .about-me__progress-wrapper .about-me__progress {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,9 +560,8 @@ h6 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 1px solid #ae7420;
-  margin-bottom: 10%;
 }
-.about-me .about-me__progress div {
+.about-me .about-me__progress-wrapper .about-me__progress div {
   width: 5px;
   position: relative;
   -webkit-transition: 0.5s;
@@ -543,12 +573,12 @@ h6 {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.about-me .about-me__progress div .bg {
+.about-me .about-me__progress-wrapper .about-me__progress div .bg {
   width: 100%;
   background-color: #ae7420;
   border-radius: 5px 5px 0px 0px;
 }
-.about-me .about-me__progress div i {
+.about-me .about-me__progress-wrapper .about-me__progress div i {
   position: absolute;
   bottom: -30px;
   left: 50%;
@@ -557,22 +587,62 @@ h6 {
   color: #c06048;
   font-size: 20px;
 }
-.about-me .about-me__progress div:nth-child(1) {
+.about-me .about-me__progress-wrapper .about-me__progress div:nth-child(1) {
   height: 40px;
 }
-.about-me .about-me__progress div:nth-child(2) {
+.about-me .about-me__progress-wrapper .about-me__progress div:nth-child(2) {
   height: 38px;
 }
-.about-me .about-me__progress div:nth-child(3) {
+.about-me .about-me__progress-wrapper .about-me__progress div:nth-child(3) {
   height: 35px;
 }
-.about-me .about-me__progress div:nth-child(4) {
+.about-me .about-me__progress-wrapper .about-me__progress div:nth-child(4) {
   height: 20px;
 }
-.about-me .about-me__progress div:nth-child(5) {
+.about-me .about-me__progress-wrapper .about-me__progress div:nth-child(5) {
   height: 20px;
 }
 
+@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .about-me {
+    padding: 8% 5%;
+  }
+  .about-me ul {
+    font-size: 70px;
+  }
+  .about-me .about-me__text {
+    font-size: 25px;
+    margin: 10% 0;
+    width: 100%;
+  }
+  .about-me button {
+    width: 100%;
+    padding: 4% 0%;
+  }
+  .about-me .about-me__progress-wrapper {
+    width: 100%;
+    margin-bottom: 20%;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div i {
+    bottom: -70px;
+    font-size: 35px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(1) {
+    height: 100px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(2) {
+    height: 98px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(3) {
+    height: 95px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(4) {
+    height: 80px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(5) {
+    height: 80px;
+  }
+}
 @media (max-width: 600px) {
   .about-me {
     padding: 6% 5%;
@@ -595,9 +665,30 @@ h6 {
     width: 75%;
     height: 20%;
   }
-  .about-me .about-me__progress {
-    width: 100% !important;
+  .about-me .about-me__progress-wrapper {
+    width: 100%;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress {
     margin: 0 0 20% 0;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(1) {
+    height: 90px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(2) {
+    height: 88px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(3) {
+    height: 85px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(4) {
+    height: 70px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div:nth-child(5) {
+    height: 70px;
+  }
+  .about-me .about-me__progress-wrapper .about-me__progress div i {
+    font-size: 30px;
+    bottom: -50px;
   }
 }
 .my-work {
@@ -685,6 +776,22 @@ h6 {
           align-items: center;
 }
 
+@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .my-work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding: 3%;
+  }
+  .my-work .card {
+    width: 60%;
+    margin: 10% 0%;
+  }
+}
 @media (max-width: 800px) {
   .my-work {
     -webkit-box-orient: vertical;
@@ -1047,7 +1154,7 @@ h6 {
   -webkit-animation: bounce-in-top 1.1s 1.2s both;
           animation: bounce-in-top 1.1s 1.2s both;
 }
-.block-active .about-me__progress {
+.block-active .about-me__progress-wrapper .about-me__progress {
   -webkit-animation: widthP 2s 2s both;
           animation: widthP 2s 2s both;
 }
@@ -1056,7 +1163,7 @@ h6 {
     width: 0%;
   }
   100% {
-    width: 60%;
+    width: 100%;
   }
 }
 @keyframes widthP {
@@ -1064,14 +1171,14 @@ h6 {
     width: 0%;
   }
   100% {
-    width: 60%;
+    width: 100%;
   }
 }
-.block-active .about-me__progress div .bg {
+.block-active .about-me__progress-wrapper .about-me__progress div .bg {
   -webkit-animation: AProgress 1s both;
           animation: AProgress 1s both;
 }
-.block-active .about-me__progress div i {
+.block-active .about-me__progress-wrapper .about-me__progress div i {
   -webkit-animation: IProgress 1s both;
           animation: IProgress 1s both;
 }
@@ -1099,43 +1206,43 @@ h6 {
     opacity: 1;
   }
 }
-.block-active .about-me__progress div:nth-child(1) .bg {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(1) .bg {
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
 }
-.block-active .about-me__progress div:nth-child(1) i {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(1) i {
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
 }
-.block-active .about-me__progress div:nth-child(2) .bg {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(2) .bg {
   -webkit-animation-delay: 3.8s;
           animation-delay: 3.8s;
 }
-.block-active .about-me__progress div:nth-child(2) i {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(2) i {
   -webkit-animation-delay: 3.8s;
           animation-delay: 3.8s;
 }
-.block-active .about-me__progress div:nth-child(3) .bg {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(3) .bg {
   -webkit-animation-delay: 4.1s;
           animation-delay: 4.1s;
 }
-.block-active .about-me__progress div:nth-child(3) i {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(3) i {
   -webkit-animation-delay: 4.1s;
           animation-delay: 4.1s;
 }
-.block-active .about-me__progress div:nth-child(4) .bg {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(4) .bg {
   -webkit-animation-delay: 4.4s;
           animation-delay: 4.4s;
 }
-.block-active .about-me__progress div:nth-child(4) i {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(4) i {
   -webkit-animation-delay: 4.4s;
           animation-delay: 4.4s;
 }
-.block-active .about-me__progress div:nth-child(5) .bg {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(5) .bg {
   -webkit-animation-delay: 4.7s;
           animation-delay: 4.7s;
 }
-.block-active .about-me__progress div:nth-child(5) i {
+.block-active .about-me__progress-wrapper .about-me__progress div:nth-child(5) i {
   -webkit-animation-delay: 4.7s;
           animation-delay: 4.7s;
 }

@@ -56,6 +56,22 @@
     }
 }
 
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    .my-work {
+        flex-direction: column;
+        justify-content: end;
+        padding: 3%;
+       .card {
+           width: 60%;
+           margin: 10% 0%;
+       }
+    }
+  }
+
 @media (max-width:800px) {
     .my-work {
         flex-direction: column;
