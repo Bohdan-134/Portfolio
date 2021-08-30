@@ -204,11 +204,12 @@
         align-items: center;
         background-color: #000000c4;
         justify-content: start;
+        overflow-y: scroll;
         .my-info {
             margin-top: 5%;
             .wrapper-img {
-                width: 180px;
-                height: 180px;
+                width: 150px;
+                height: 150px;
                 margin: 15px 0px 10px;
             }
             .profession {
@@ -218,7 +219,8 @@
         ul {
             width: 90%;
             .nav-button {
-                padding: 10% 0;
+                padding: 0;
+                margin: 20% 0;
             }
             .indicator {
                 display: none;
