@@ -146,28 +146,38 @@
     
 }
 
-@media (max-width:600px) {
+@media (max-width:900px){
     .about-me {
-        padding: 6% 5%;
+        padding: 3% 5%;
+        .about-me__text {
+            font-size: 20px;
+        }
+        .about-me__progress-wrapper {
+            width: 100%;
+            margin: 5% 0 12% 0;
+        }
+        #contactMe{
+            width: 100%;
+            padding: 3% 0;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .about-me {
         ul {
             font-size: 60px;
         }
         .about-me__text {
-            margin: 15% 0;
+            width: 100%;
+            margin: 10% 0;
         }
         button {
             width: 100%;
             padding: 4.5% 6%;
         }
-        .about-me__certificate {
-            right: 50%;
-            transform: translateX(50%);
-            top: -16%;
-            width: 75%;
-            height: 20%;
-        }
         .about-me__progress-wrapper{
-            width: 100%;
+            margin: 5% 0 8% 0;
             .about-me__progress {
                margin: 0 0 20% 0;
                div {
@@ -195,3 +205,66 @@
         }
     }
 }
+
+@media (max-width: 430px){
+    .about-me{
+        .about-me__text {
+            margin: 15% 0;
+            min-width: 100%;
+        }
+        .about-me__progress-wrapper{
+            margin: 5% 0 12% 0;
+        }
+        #contactMe{
+            padding: 5% 0;
+        }
+    }
+}
+
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 830px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    .about-me {
+        padding: 2%;
+        ul {
+            font-size: 40px;
+        }
+        .about-me__text {
+            min-width: 100%;
+            margin: 2% 0;
+        }
+        .about-me__progress-wrapper{
+            margin: 0% 0 5% 0;
+            width: 60%;
+            .about-me__progress {
+               margin: 0;
+               div {
+                &:nth-child(1){
+                    height: 40px;
+                }
+                &:nth-child(2){
+                    height: 38px;
+                }
+                &:nth-child(3){
+                    height: 35px;
+                }
+                &:nth-child(4){
+                    height: 20px;
+                }
+                &:nth-child(5){
+                    height: 20px;
+                }
+                i {
+                    font-size: 20px;
+                    bottom: -30px;
+                }
+               }
+           }
+        }
+        #contactMe {
+            padding: 1.5% 0%;
+        }
+    }
+  }
