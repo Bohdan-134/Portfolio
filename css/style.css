@@ -619,6 +619,28 @@ h6 {
     font-size: 22px;
   }
 }
+@media only screen and (min-device-width: 550px) and (max-device-width: 900px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation .my-info {
+    display: none;
+  }
+  .navigation .nav-btn__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navigation .nav-btn__block li {
+    margin: 0;
+  }
+}
 .open {
   bottom: 0%;
 }
