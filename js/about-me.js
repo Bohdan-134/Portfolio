@@ -33,3 +33,17 @@ function contactMeBtnClick() {
 }
 
 contactMeBtn.onclick = contactMeBtnClick;
+
+/* sert */
+
+const certifBtnOpen = document.querySelector('.t1-2');
+const certificate = document.querySelector('.certificate');
+const certifBtnClosed = document.querySelector('.bx-x');
+
+certifBtnOpen.onclick = () => {
+    certificate.classList.add('certificate-active');
+}
+
+certifBtnClosed.onclick = () => {
+    certificate.classList.remove('certificate-active');
+}

@@ -1,178 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- box-icons -->
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- css style -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <i class='bx bxl-css3 bx-body'></i>
-    <i class='bx bx-code-alt bx-body'></i>
-    <i class='bx bxl-javascript bx-body'></i>
-    <i class='bx bx-arrow-to-top bx-body'></i>
-    <i class='bx bx-git-pull-request bx-body'></i>
-    <i class='bx bx-terminal bx-body'></i>
-    <i class='bx bx-slider bx-body'></i>
-    <i class='bx bxs-keyboard bx-body'></i>
-    <i class='bx bx-code-curly bx-body'></i>
-    <i class='bx bx-conversation bx-body'></i>
-    <i class='bx bx-image-alt bx-body'></i>
-    <i class='bx bx-microchip bx-body'></i>
-    <i class='bx bx-loader bx-body'></i>
-    <i class='bx bx-desktop bx-body'></i>
-    <i class='bx bx-mouse bx-body'></i>
-    <i class='bx bx-category-alt bx-body'></i>
-    <i class='bx bx-file bx-body'></i>
-    <i class='bx bx-tab bx-body'></i>
-    <i class='bx bx-mobile-alt bx-body'></i>
+  <body>
+    <i class="bx bxl-css3 bx-body"></i>
+    <i class="bx bx-code-alt bx-body"></i>
+    <i class="bx bxl-javascript bx-body"></i>
+    <i class="bx bx-arrow-to-top bx-body"></i>
+    <i class="bx bx-git-pull-request bx-body"></i>
+    <i class="bx bx-terminal bx-body"></i>
+    <i class="bx bx-slider bx-body"></i>
+    <i class="bx bxs-keyboard bx-body"></i>
+    <i class="bx bx-code-curly bx-body"></i>
+    <i class="bx bx-conversation bx-body"></i>
+    <i class="bx bx-image-alt bx-body"></i>
+    <i class="bx bx-microchip bx-body"></i>
+    <i class="bx bx-loader bx-body"></i>
+    <i class="bx bx-desktop bx-body"></i>
+    <i class="bx bx-mouse bx-body"></i>
+    <i class="bx bx-category-alt bx-body"></i>
+    <i class="bx bx-file bx-body"></i>
+    <i class="bx bx-tab bx-body"></i>
+    <i class="bx bx-mobile-alt bx-body"></i>
     <div class="container">
-        <div class="content">
-            <i class='bx bx-chevron-up btn-m'></i>
-            <div class="about-me block block-active" id="tab-1">
-                <ul class="about-me__words">
-                    <li class="word-h2">H</li>
-                    <li class="word-h2">e</li>
-                    <li class="word-h2">l</li>
-                    <li class="word-h2">l</li>
-                    <li class="word-h2">o</li>
-                    <li class="word-h2">,</li>
-                </ul>
-                <div class="about-me__text"><span class="t1">My name is Bogdan, </span><span class="t1">I am 20 years old, </span><span class="t1">I live in </span> <br><span class="t1"> Kherson, Ukraine. </span><span class="t1">He graduated </span><span class="t1">from courses </span><br>
-                    <span class="t1">at Beetroot, </span>
-                    <span class="t1">where he studied</span><span class="t1"> Front-End </span><br><span class="t1">Development.</span>
-                </div>
-                <div class="about-me__progress-wrapper">
-                    <div class="about-me__progress">
-                        <div class="progress_html"><div class="bg"></div><i class='bx bxl-html5'></i></div>
-                        <div class="progress_css"><div class="bg"></div><i class='bx bxl-css3' ></i></div>
-                        <div class="progress_sass"><div class="bg"></div><i class='bx bxl-sass' ></i></div>
-                        <div class="progress_js"><div class="bg"></div><i class='bx bxl-javascript' ></i></div>
-                        <div class="progress_git"><div class="bg"></div><i class='bx bxl-git' ></i></div>
-                    </div>
-                </div>
-                <button id="contactMe">Contact me</button>
+      <div class="content">
+        <div class="certificate">
+            <i class='bx bx-x'></i>
+            <img src="./img/Kochmar.jpg" alt="certificate" />
+          </div>
+        <i class="bx bx-chevron-up btn-m"></i>
+        <div class="about-me block block-active" id="tab-1">
+          <ul class="about-me__words">
+            <li class="word-h2">H</li>
+            <li class="word-h2">e</li>
+            <li class="word-h2">l</li>
+            <li class="word-h2">l</li>
+            <li class="word-h2">o</li>
+            <li class="word-h2">,</li>
+          </ul>
+          <div class="about-me__text">
+            <span class="t1">My name is Bogdan, </span
+            ><span class="t1">I am 20 years old, </span
+            ><span class="t1">I live in </span> <br /><span class="t1">
+              Kherson, Ukraine. </span
+            ><span class="t1">He graduated </span
+            ><span class="t1">from courses </span><br />
+            <span class="t1-2">at Beetroot, </span>
+            <span class="t1">where he studied</span
+            ><span class="t1"> Front-End </span><br /><span class="t1"
+              >Development.</span
+            >
+          </div>
+          <div class="about-me__progress-wrapper">
+            <div class="about-me__progress">
+              <div class="progress_html">
+                <div class="bg"></div>
+                <i class="bx bxl-html5"></i>
+              </div>
+              <div class="progress_css">
+                <div class="bg"></div>
+                <i class="bx bxl-css3"></i>
+              </div>
+              <div class="progress_sass">
+                <div class="bg"></div>
+                <i class="bx bxl-sass"></i>
+              </div>
+              <div class="progress_js">
+                <div class="bg"></div>
+                <i class="bx bxl-javascript"></i>
+              </div>
+              <div class="progress_git">
+                <div class="bg"></div>
+                <i class="bx bxl-git"></i>
+              </div>
             </div>
-            <div class="my-work block" id="tab-2">
-               <div class="card" data-tilt data-tilt-speed="600" data-tilt-scale="1.1">
-                   <img src="./img/StudioIT.png" alt="it">
-                   <ul>
-                    <li>IT-Studio</li>
-                       <li>HTML: 17.9%</li>
-                       <li>CSS: 36.7%</li>
-                       <li>SCSS: 44.7%</li>
-                       <li>JS: 0.7</li>
-                   </ul>
-                   <a href="https://bohdan-134.github.io/IT-Studio/">View</a>
-               </div>
-               <div class="card" data-tilt data-tilt-speed="600" data-tilt-scale="1.1">
-                <img src="./img/weather.png" alt="weather">
-                   <ul>
-                    <li>Weather</li>
-                        <li>HTML: 7.8%</li>
-                        <li>CSS: 34.7%</li>
-                        <li>SCSS: 39.8%</li>
-                        <li>JS: 17.7%</li>
-                   </ul>
-                   <a href="https://bohdan-134.github.io/weather/">View</a>
-               </div>
-               <div class="card" data-tilt data-tilt-speed="600" data-tilt-scale="1.1">
-                <img src="./img/ROOM.png" alt="ROOM">
-                   <ul>
-                       <li>ROOM</li>
-                        <li>HTML: 25.3%</li>
-                        <li>CSS: 37.9%</li>
-                        <li>SCSS: 34.1%</li>
-                        <li>JS: 2.7%</li>
-                   </ul>
-                   <a href="https://bohdan-134.github.io/ROOM/">View</a>
-               </div>
-            </div>
-            <div class="contact-me block" id="tab-3">
-                <i class='bx bxs-info-circle contact_info-btn'></i>
-                <div class="contact-me__info-block">
-                    <ul>
-                        <li class="n1">
-                            <i class='bx bxl-github'></i>
-                            <a href="https://github.com/Bohdan-134">Github</a>
-                        </li>
-                        <li class="n1">
-                            <i class='bx bx-mail-send'></i>
-                            <a href="mailto:bkachmar1@gmail.com">Mailto</a>
-                        </li>
-                        <li class="n1">
-                            <i class='bx bxl-telegram'></i>
-                            <a href="https://telegram.me/kbohdan1">Telegram</a>
-                        </li>
-                        <li class="n1">
-                            <i class='bx bx-map'></i>
-                            <a href="https://goo.gl/maps/SGP5KAVVVrtpwt9v8">Kherson, Ukraine</a>
-                        </li>
-                        <li class="n1">
-                            <i class='bx bx-mobile-alt'></i>
-                            <a href="tel:+380950367016">Phone</a>
-                        </li>
-                        <li>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d38797.95816399699!2d32.60408466994103!3d46.64266467919544!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1628094949425!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </li>
-                    </ul>
-                </div>
-                <form action="https://formspree.io/f/xoqyppdd" method="POST" class="contact-me__form">
-                    <input type="mail" name="user_email" value="Mail">
-                    <input type="name" name="user_name" value="Name">
-                    <input type="tel" name="user_phone" value="Tel">
-                    <textarea cols="30" name="msg" rows="10"></textarea>
-                    <button type="submit">Send</button>
-                </form>
-
-            </div>
+          </div>
+          <button id="contactMe">Contact me</button>
         </div>
-        <nav class="navigation nav-animation">
-            <div class="my-info">
-                <div class="wrapper-img">
-
-                </div>
-                <span class="my-names">Kachmar Bohdan</span>
-                <span class="profession">Web Developer</span>
-                <ul>
-                    <li>
-                        <a href="https://github.com/Bohdan-134"><i class='bx bxl-github' ></i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:bkachmar1@gmail.com"><i class='bx bx-mail-send' ></i></a>
-                    </li>
-                    <li>
-                        <a href="https://telegram.me/kbohdan1"><i class='bx bxl-telegram'></i></a>
-                    </li>
-                </ul>
-            </div>
-            <ul class="nav-btn__block">
-                <li class="nav-button active" data-tab="#tab-1">About me</li>
-                <li class="nav-button" data-tab="#tab-2">My work</li>
-                <li class="nav-button" data-tab="#tab-3">Contact me</li>
+        <div class="my-work block" id="tab-2">
+          <div
+            class="card"
+            data-tilt
+            data-tilt-speed="600"
+            data-tilt-scale="1.1"
+          >
+            <img src="./img/StudioIT.png" alt="it" />
+            <ul>
+              <li>IT-Studio</li>
+              <li>HTML: 17.9%</li>
+              <li>CSS: 36.7%</li>
+              <li>SCSS: 44.7%</li>
+              <li>JS: 0.7</li>
             </ul>
-        </nav>
+            <a href="https://bohdan-134.github.io/IT-Studio/">View</a>
+          </div>
+          <div
+            class="card"
+            data-tilt
+            data-tilt-speed="600"
+            data-tilt-scale="1.1"
+          >
+            <img src="./img/weather.png" alt="weather" />
+            <ul>
+              <li>Weather</li>
+              <li>HTML: 7.8%</li>
+              <li>CSS: 34.7%</li>
+              <li>SCSS: 39.8%</li>
+              <li>JS: 17.7%</li>
+            </ul>
+            <a href="https://bohdan-134.github.io/weather/">View</a>
+          </div>
+          <div
+            class="card"
+            data-tilt
+            data-tilt-speed="600"
+            data-tilt-scale="1.1"
+          >
+            <img src="./img/ROOM.png" alt="ROOM" />
+            <ul>
+              <li>ROOM</li>
+              <li>HTML: 25.3%</li>
+              <li>CSS: 37.9%</li>
+              <li>SCSS: 34.1%</li>
+              <li>JS: 2.7%</li>
+            </ul>
+            <a href="https://bohdan-134.github.io/ROOM/">View</a>
+          </div>
+        </div>
+        <div class="contact-me block" id="tab-3">
+          <i class="bx bxs-info-circle contact_info-btn"></i>
+          <div class="contact-me__info-block">
+            <ul>
+              <li class="n1">
+                <i class="bx bxl-github"></i>
+                <a href="https://github.com/Bohdan-134">Github</a>
+              </li>
+              <li class="n1">
+                <i class="bx bx-mail-send"></i>
+                <a href="mailto:bkachmar1@gmail.com">Mailto</a>
+              </li>
+              <li class="n1">
+                <i class="bx bxl-telegram"></i>
+                <a href="https://telegram.me/kbohdan1">Telegram</a>
+              </li>
+              <li class="n1">
+                <i class="bx bx-map"></i>
+                <a href="https://goo.gl/maps/SGP5KAVVVrtpwt9v8"
+                  >Kherson, Ukraine</a
+                >
+              </li>
+              <li class="n1">
+                <i class="bx bx-mobile-alt"></i>
+                <a href="tel:+380950367016">Phone</a>
+              </li>
+              <li>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d38797.95816399699!2d32.60408466994103!3d46.64266467919544!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1628094949425!5m2!1sru!2sua"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </li>
+            </ul>
+          </div>
+          <form
+            action="https://formspree.io/f/xoqyppdd"
+            method="POST"
+            class="contact-me__form"
+          >
+            <input type="mail" name="user_email" value="Mail" />
+            <input type="name" name="user_name" value="Name" />
+            <input type="tel" name="user_phone" value="Tel" />
+            <textarea cols="30" name="msg" rows="10"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <nav class="navigation nav-animation">
+        <div class="my-info">
+          <div class="wrapper-img"></div>
+          <span class="my-names">Kachmar Bohdan</span>
+          <span class="profession">Web Developer</span>
+          <ul>
+            <li>
+              <a href="https://github.com/Bohdan-134"
+                ><i class="bx bxl-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:bkachmar1@gmail.com"
+                ><i class="bx bx-mail-send"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://telegram.me/kbohdan1"
+                ><i class="bx bxl-telegram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav-btn__block">
+          <li class="nav-button active" data-tab="#tab-1">About me</li>
+          <li class="nav-button" data-tab="#tab-2">My work</li>
+          <li class="nav-button" data-tab="#tab-3">Contact me</li>
+        </ul>
+      </nav>
     </div>
     <!--  js -->
     <script src="./js/script.js"></script>
     <script src="./js/about-me.js"></script>
     <script src="./js/navigation.js"></script>
     <script src="./js/contact-me.js"></script>
-   <script src="./js/vanilla-tilt.js"></script>
-   <script type="text/javascript">
-</script>
-</body>
-
+    <script src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript"></script>
+  </body>
 </html>
