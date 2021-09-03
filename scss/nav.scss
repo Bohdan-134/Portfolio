@@ -34,6 +34,11 @@
             height: 120px;
             border-radius: 50%;
             animation: bounce-in-top 1.1s both;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 80%;
+            }
         }
         .my-names {
             color: #c06048;
